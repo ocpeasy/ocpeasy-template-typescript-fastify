@@ -4,7 +4,7 @@ const fastify = require('fastify')({
 })
 
 // Declare a route
-fastify.get('/', function (request, reply) {
+fastify.get('/', (request, reply) => {
     reply.send({ hello: 'world' })
 })
 
