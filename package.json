@@ -1,0 +1,19 @@
+{
+  "name": "ocpeasy-template-typescript-fastify",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/ocpeasy/ocpeasy-template-typescript-fastify.git",
+  "author": "David Barrat <david.barrat@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.12.0"
+  },
+  "scripts": {
+    "start": "ts-node ."
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  }
+}
