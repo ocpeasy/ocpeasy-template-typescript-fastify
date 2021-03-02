@@ -4,4 +4,6 @@ ENV PATH /var/app/node_modules/.bin:$PATH
 COPY package.json ./
 RUN yarn
 COPY . ./
-ENTRYPOINT ["yarn start"]
+COPY docker-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
